@@ -9,7 +9,8 @@ export const transformBalanceSheetData = ({ Reports }: { Reports: Report[] }) =>
   }
   const reportData = Reports ? Reports : [];
   const { ReportName, ReportDate, ReportTitles } = reportData[0] ?? {};
-  const titleData = { reportName: ReportName, reportDate: ReportDate, reportTitles: ReportTitles.join(' ') };
+  const reportTitles = ReportTitles.join(' ');
+  const titleData = { reportName: ReportName, reportDate: ReportDate, reportTitles };
   const tableHeaderData = reportData[0]?.Rows?.find((row) => row.RowType === 'Header')?.Cells?.filter((cell) => cell.Value) ?? [];
   const tableHeader = [{ Value: 'account' }, ...tableHeaderData] as Header[];
   const tableData = reportData[0].Rows.filter((row) => row.RowType === 'Section');
