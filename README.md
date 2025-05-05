@@ -25,3 +25,23 @@
   - Consider unit tests.
 
 Consider containerise your solution.
+
+
+## Steps to run the application
+
+- Clone the repository.
+  - There are two folders - backend and frontend. backend is for the backend application and frontend is for the frontend application.
+
+### Backend
+- Move to backend folder
+- Pull the image jaypeng2015/show-me-the-money from Docker 
+- Run `docker run -d -p 3000:3000 jaypeng2015/show-me-the-money`
+- Copy .env.example to .env
+- Run `pnpm install`
+- Run `pnpm start`
+
+### Frontend
+- Move to frontend folder
+- Copy .env.example to .env
+- Run `pnpm install`
+- Run `pnpm run dev`
