@@ -8,6 +8,6 @@ import {
 const router = Router();
 
 router.get('/example', example);
-router.get('/fetch', getBalanceSheet);
+router.get('/', getBalanceSheet);
 
 export default router;
