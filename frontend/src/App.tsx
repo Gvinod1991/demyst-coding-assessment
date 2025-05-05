@@ -1,10 +1,9 @@
-import './App.css'
+import { BalanceSheet } from './features/reports/pages/balanceSheet'
 
 function App() {
-
   return (
     <div className="root">
-      APP
+      <BalanceSheet />
     </div>
   )
 }
