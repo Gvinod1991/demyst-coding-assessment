@@ -1,5 +1,5 @@
 
-import { getBalanceSheet } from '../../src/balanceSheet/controllers/balanceSheetController';
+import { getBalanceSheet } from '../../balanceSheet/controllers/balanceSheetController';
 
 import { Request, Response, NextFunction } from 'express';
 

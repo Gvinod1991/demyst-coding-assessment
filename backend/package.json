@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon",
     "clean": "rm -rf ./dist",
-    "build": "npm run clean && tsc",
-    "serve": "node dist/src/app.js",
+    "build": "npm run clean && npx tsc",
+    "serve": "node dist/app.js",
     "test": "jest"
   },
   "keywords": [],
